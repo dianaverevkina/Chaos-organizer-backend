@@ -7,8 +7,33 @@ export default class Store {
 
   getTimestamp() {
     const time = new Date().toLocaleTimeString();
-    const date = new Date().toLocaleDateString();
     return `${time.slice(0, 5)}`;
+  }
+
+  getFulldate() {
+    const time = new Date().toLocaleTimeString();
+    const date = new Date().toLocaleDateString();
+    return `${date} ${time.slice(0, 5)}`;
+  }
+
+  getTenMessages(limit, lastMessage = 0) {
+    console.log('last messsage ' + lastMessage)
+    const lastIndex = !lastMessage ? this.messages.length : this.messages.findIndex(mes =>{
+      return mes.id === lastMessage
+    } );
+
+    if (lastIndex <= 0) return;
+
+    console.log('last index ' + lastIndex)
+
+    let firstMessageIndex = Math.max(0, lastIndex - limit);
+    
+    if (firstMessageIndex === 0) {
+        // Если первое сообщение не является началом массива, возвращаем оставшиеся сообщения
+        return this.messages.slice(0, lastIndex).reverse();
+    } else {
+        return this.messages.slice(firstMessageIndex, lastIndex).reverse();
+    }
   }
 
   addLink(arr) {
@@ -16,5 +41,17 @@ export default class Store {
       const date = this.getTimestamp();
       this.links.push({ link, date });
     });
+  }
+
+  formatFileSize(bytes, decimals = 2) {
+    if (bytes === 0) {
+      return '0';
+    } else {
+      var k = 1024;
+      var dm = decimals < 0 ? 0 : decimals;
+      var sizes = ['байт', 'КБ', 'МБ', 'ГБ', 'ТБ'];
+      var i = Math.floor(Math.log(bytes) / Math.log(k));
+      return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+    }
   }
 }
