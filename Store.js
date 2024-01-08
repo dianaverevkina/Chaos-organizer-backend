@@ -17,14 +17,11 @@ export default class Store {
   }
 
   getTenMessages(limit, lastMessage = 0) {
-    console.log('last messsage ' + lastMessage)
     const lastIndex = !lastMessage ? this.messages.length : this.messages.findIndex(mes =>{
-      return mes.id === lastMessage
+      return mes.message.id === lastMessage
     } );
 
     if (lastIndex <= 0) return;
-
-    console.log('last index ' + lastIndex)
 
     let firstMessageIndex = Math.max(0, lastIndex - limit);
     

@@ -34,110 +34,185 @@ store.links = [{
 }];
 store.messages = [
   {
-    id: '1',
-    text: 'hello',
-    date: '1',
+    message: {
+      id: '1',
+      text: 'It’s a special day at the ABC Zoo. A new animal is here',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '2',
-    text: 'hi',
-    date: '1',
+    message: {
+      id: '2',
+      text: 'It’s a zorilla from Africa. She needs a home',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '3',
-    text: 'how',
-    date: '1',
+    message: {
+      id: '3',
+      text: "Let’s see. An aardvark, a boa constrictor, a coyote and a duck-billed platypus. The zorilla doesn’t go here.",
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '4',
-    text: 'are',
-    date: '1',
+    message: {
+      id: '4',
+      text: 'An emu, a flamingo, a giraffe and a hyena. The zorilla doesn’t go here',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '5',
-    text: 'you',
-    date: '1',
+    message: {
+      id: '5',
+      text: 'Elizabeth was very clever, but she had a difficult childhood with her bad-tempered father and so many stepmothers.',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '6',
-    text: 'im ok',
-    date: '1',
+    message: {
+      id: '6',
+      text: 'Elizabeth became queen in 1558',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '7',
-    text: 'wonderful',
-    date: '1',
+    message: {
+      id: '7',
+      text: ' You are the new queen.',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '8',
-    text: 'nice',
-    date: '1',
+    message: {
+      id: '8',
+      text: 'Elizabeth sent explorers sailing around the world',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '9',
-    text: 'cat',
-    date: '1',
+    message: {
+      id: '9',
+      text: 'In 1588, the Spanish king sent a huge fleet of ships to attack England.',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '10',
-    text: 'mouse',
-    date: '1',
+    message: {
+      id: '10',
+      text: 'I know I have the body of a weak woman, but I have the heart and stomach of a king.',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '11',
-    text: 'beauty',
-    date: '1',
+    message: {
+      id: '11',
+      text: 'Elizabeth’s cousin, Mary, was Queen of Scotland.',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '12',
-    text: 'shower',
-    date: '1',
+    message: {
+      id: '12',
+      text: 'd. Mary had to run away from Scotland and she asked Elizabeth to protect her',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '13',
-    text: 'cool',
-    date: '1',
+    message: {
+      id: '13',
+      text: 'Elizabeth was afraid that Mary wanted to become Queen of England',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '14',
-    text: 'magic',
-    date: '1',
+    message: {
+      id: '14',
+      text: 'Elizabeth was queen for 45 years.',
+      date: '1',
+    },
+    links: [],
+    type: 'textMessage',
+    user: {name: 'user'},
   },
   {
-    id: '15',
-    text: 'love',
-    date: '1',
+    message: {
+      id: '15', 
+      text: 'Wonderful nature', 
+      date: '12:15',
+    }, 
+    files: [
+      {
+        id: '111',
+        fileName: 'nature',
+        type: 'image',
+        date: '12:00',
+        fullDate: '12.01 12:00',
+        path: 'https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80',
+        size: '5Mb',
+      },
+    ],
+    type: 'file',
+    user: {name: 'user'},
   },
   {
-    id: '16',
-    text: 'hate',
-    date: '1',
-  },
-  {
-    id: '17',
-    text: 'kind',
-    date: '1',
-  },
-  {
-    id: '18',
-    text: 'haha',
-    date: '1',
-  },
-  {
-    id: '19',
-    text: 'hare',
-    date: '1',
-  },
-  {
-    id: '20',
-    text: 'khight',
-    date: '1',
-  },
-  {
-    id: '21',
-    text: 'animal',
-    date: '1',
-  },
+    message: {
+      id: '16', 
+      text: '', 
+      date: '12:15',
+    }, 
+    files: [
+      {
+        id: '116',
+        fileName: 'nature',
+        type: 'image',
+        date: '12:00',
+        fullDate: '12.01 12:00',
+        path: 'https://hips.hearstapps.com/hmg-prod/images/nature-quotes-landscape-1648265299.jpg',
+        size: '5Mb',
+      },
+    ],
+    type: 'file',
+    user: {name: 'user'},
+  }
 ];
 
 app.get("/links", async (request, response) => {
@@ -188,7 +263,7 @@ const wsServer = new WebSocketServer({ server });
 wsServer.on("connection", (ws) => {
   ws.on("message", (msg, isBinary) => {
     const receivedMSG = JSON.parse(msg);
-    console.dir(receivedMSG);
+    
     if (receivedMSG.type === "exit") {
       const idx = userState.findIndex(
         (user) => user.name === receivedMSG.user.name
@@ -205,9 +280,8 @@ wsServer.on("connection", (ws) => {
       const messages = store.getTenMessages(limit, receivedMSG.index);
       if (!messages) return;
       const response = {
-        messages: messages, 
+        savedMessages: messages, 
         type: receivedMSG.type,
-        user: receivedMSG.user,
       };
       [...wsServer.clients]
         .filter((o) => o.readyState === WebSocket.OPEN)
@@ -224,13 +298,13 @@ wsServer.on("connection", (ws) => {
 
       store.addLink(links);
 
-      store.messages.push(message);
       const response = {
         message,
         links,
         type,
         user,
       };
+      store.messages.push(response);
       console.dir(store.messages);
       [...wsServer.clients]
         .filter((o) => o.readyState === WebSocket.OPEN)
@@ -242,15 +316,16 @@ wsServer.on("connection", (ws) => {
       const files = [];
       
       for (const file of receivedMSG.files) {
-        const fileName = `${Date.now().toString(36)}-${file.name}`;
+        // const fileName = `${Date.now().toString(36)}-${file.name}`;
         const fileDocument = {
           id: crypto.randomUUID(),
-          fileName: fileName,
+          fileName: file.name,
           type: file.type,
           date: store.getTimestamp(),
           fullDate: store.getFulldate(),
           path: file.path,
           size: store.formatFileSize(file.size),
+          duration: file.duration,
         };
   
           files.push(fileDocument);
@@ -264,14 +339,14 @@ wsServer.on("connection", (ws) => {
         user: receivedMSG.user,
       };
 
-      
+      store.messages.push(response);
   
       [...wsServer.clients]
         .filter((o) => o.readyState === WebSocket.OPEN)
         .forEach((o) => o.send(JSON.stringify(response), { binary: isBinary }));
     }
   });
-  console.log(userState);
+
   [...wsServer.clients]
     .filter((o) => o.readyState === WebSocket.OPEN)
     .forEach((o) => o.send(JSON.stringify(userState)));
